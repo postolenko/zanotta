@@ -2332,6 +2332,27 @@ textarea:focus {
     background: #E16752;
 }
 
+.video_thumb {
+    position: relative;
+}
+
+.video_thumb:before {
+    display: block;
+    content: "";
+    width: 78px;
+    height: 78px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/play.svg);
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
 /*-- /Section 7 -Main Page --*/
 
 /*-- Section 8 -Main Page --*/
