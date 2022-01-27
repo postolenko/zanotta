@@ -899,7 +899,14 @@ p {
 	    display: -webkit-flex !important;
 	}
 
-	.sbm {
-		display: block !important;
+	.sub_menu {
+	    display: flex !important;
+	    display: -webkit-flex !important;
 	}
+
+	.sub_menu_2 {
+	    display: block !important;
+	}
+
+
 }
