@@ -8,19 +8,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Zanotta</title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
 
 	<div class="wrapper">
 
-	<!-- Header -->
-		
+	<!-- Header -->		
 	<header>
-		<div class="header_site">
+		<div class="header_site" id="headerSite">
 			<div class="header_top_row">
 				<div class="header_top row">
 					<div class="left">
@@ -58,7 +56,7 @@
 								</ul>
 							</div>
 							<div>
-								<a href="#" class="icon_link">
+								<a href="#" class="icon_link icon_link_contact">
 									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M15.8473 0.152888C15.7015 0.00708018 15.4836 -0.0391456 15.2912 0.0348365L0.334685 5.78701C0.139069 5.86224 0.00741734 6.04725 0.000530428 6.25675C-0.00639126 6.46624 0.112704 6.65953 0.302928 6.74752L6.42219 9.57808L9.25275 15.6973C9.33831 15.8823 9.52342 16.0001 9.7262 16.0001C9.73194 16.0001 9.73775 16 9.74353 15.9998C9.95302 15.9929 10.138 15.8612 10.2133 15.6656L15.9654 0.709093C16.0394 0.516642 15.9932 0.298661 15.8473 0.152888ZM9.68203 14.1399L7.28876 8.96598C7.26278 8.90981 7.22723 8.8592 7.18413 8.8161L14.5701 1.43017L9.68203 14.1399Z" fill="white"/>
 									</svg>
@@ -74,12 +72,14 @@
 					<div class="header_row_2_templ">
 						<div class="left">
 							<div>
-								<button class="respmenubtn">
-									<span></span>
-									<span></span>
-									<span></span>
-								</button>
 								<div class="inlines_2">
+									<div class="visible_1024">
+										<button class="respmenubtn">
+											<span></span>
+											<span></span>
+											<span></span>
+										</button>
+									</div>
 									<div>
 										<a href="#" class="icon_link_2">
 											<svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,13 +137,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="header_row_3 row">
+			<div class="header_row_3 row" id="resp_nav">
+				<button type="button" class="close_menu"></button>
 				<div class="left_col">
-					<div class="main_nav_wrapp" id="resp_nav">
+					<div class="main_nav_wrapp">
 						<ul class="main_nav">
 							<li>
 								<a href="#">NEW</a>
-								<div class="sub_menu">
+								<button type="button" class="sub_right_arrow"></button>
+								<div class="sub_menu sbm">
 									<div class="left_col">
 										<div class="sub_menu_box">
 											<div class="sub_menu_title">
@@ -153,7 +155,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -178,7 +180,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -196,7 +198,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -218,7 +220,8 @@
 							</li>
 							<li>
 								<a href="#">House</a>
-								<div class="sub_menu">
+								<button type="button" class="sub_right_arrow"></button>
+								<div class="sub_menu sbm">
 									<div class="left_col">
 										<div class="sub_menu_box">
 											<div class="sub_menu_title">
@@ -228,7 +231,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -253,7 +256,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -271,7 +274,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -293,7 +296,8 @@
 							</li>
 							<li>
 								<a href="#">Bathroom</a>
-								<div class="sub_menu">
+								<button type="button" class="sub_right_arrow"></button>
+								<div class="sub_menu sbm">
 									<div class="left_col">
 										<div class="sub_menu_box">
 											<div class="sub_menu_title">
@@ -303,7 +307,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -328,7 +332,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -346,7 +350,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -368,7 +372,8 @@
 							</li>
 							<li>
 								<a href="#">Kitchen</a>
-								<div class="sub_menu">
+								<button type="button" class="sub_right_arrow"></button>
+								<div class="sub_menu sbm">
 									<div class="left_col">
 										<div class="sub_menu_box">
 											<div class="sub_menu_title">
@@ -378,7 +383,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -403,7 +408,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -421,7 +426,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -443,7 +448,8 @@
 							</li>
 							<li>
 								<a href="#">Lighting</a>
-								<div class="sub_menu">
+								<button type="button" class="sub_right_arrow"></button>
+								<div class="sub_menu sbm">
 									<div class="left_col">
 										<div class="sub_menu_box">
 											<div class="sub_menu_title">
@@ -453,7 +459,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -478,7 +484,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -496,7 +502,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -518,7 +524,8 @@
 							</li>
 							<li>
 								<a href="#">Garden</a>
-								<div class="sub_menu">
+								<button type="button" class="sub_right_arrow"></button>
+								<div class="sub_menu sbm">
 									<div class="left_col">
 										<div class="sub_menu_box">
 											<div class="sub_menu_title">
@@ -528,7 +535,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -553,7 +560,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -571,7 +578,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -593,7 +600,8 @@
 							</li>
 							<li>
 								<a href="#">Furniture</a>
-								<div class="sub_menu">
+								<button type="button" class="sub_right_arrow"></button>
+								<div class="sub_menu sbm">
 									<div class="left_col">
 										<div class="sub_menu_box">
 											<div class="sub_menu_title">
@@ -603,7 +611,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -628,7 +636,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -646,7 +654,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -668,7 +676,8 @@
 							</li>
 							<li>
 								<a href="#">Home Decor</a>
-								<div class="sub_menu">
+								<button type="button" class="sub_right_arrow"></button>
+								<div class="sub_menu sbm">
 									<div class="left_col">
 										<div class="sub_menu_box">
 											<div class="sub_menu_title">
@@ -678,7 +687,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -703,7 +712,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -721,7 +730,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -743,7 +752,8 @@
 							</li>
 							<li>
 								<a href="#">Finishes</a>
-								<div class="sub_menu">
+								<button type="button" class="sub_right_arrow"></button>
+								<div class="sub_menu sbm">
 									<div class="left_col">
 										<div class="sub_menu_box">
 											<div class="sub_menu_title">
@@ -753,7 +763,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -778,7 +788,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -796,7 +806,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -818,7 +828,8 @@
 							</li>
 							<li>
 								<a href="#">Housing</a>
-								<div class="sub_menu">
+								<button type="button" class="sub_right_arrow"></button>
+								<div class="sub_menu sbm">
 									<div class="left_col">
 										<div class="sub_menu_box">
 											<div class="sub_menu_title">
@@ -828,7 +839,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -853,7 +864,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -871,7 +882,7 @@
 												<li>
 													<a href="#">Lorem ipsum</a>
 													<button type="button" class="sub_right_arrow"></button>
-													<div class="sub_menu_2">
+													<div class="sub_menu_2 sbm">
 														<div class="sub_menu_2_title">
 															<h3>Lorem ipsum</h3>
 														</div>
@@ -904,7 +915,6 @@
 			</div>
 		</div>
 	</header>
-
 	<!-- /Header -->
 
 	<!-- Content -->
@@ -966,7 +976,7 @@
 	<!-- /Section 2 -Main Page -->
 
 	<!-- Section 3 -Main Page -->
-	<section>
+	<section class="sect_3">
 		<div class="row">
 			<div class="slider_2_wrapp">
 				<div class="slider_2">
@@ -1488,7 +1498,7 @@
 			<div class="slider_3">
 				<div>
 					<div class="slide">
-						<a href="#" class="thumb_4 video_thumb">
+						<a href="#" data-src= "https://youtu.be/YPIUVXdD6Eo" class="thumb_4 video_thumb" data-fancybox >
 							<img src="img/thumb_4/video_01.jpg" alt="" />
 							<div class="thumb_4_descript">
 								<div class="thumb_4_title">
@@ -1503,7 +1513,7 @@
 				</div>
 				<div>
 					<div class="slide">
-						<a href="#" class="thumb_4 video_thumb">
+						<a href="#" data-src= "https://youtu.be/YPIUVXdD6Eo" class="thumb_4 video_thumb" data-fancybox >
 							<img src="img/thumb_4/video_02.jpg" alt="" />
 							<div class="thumb_4_descript">
 								<div class="thumb_4_title">
@@ -1518,7 +1528,7 @@
 				</div>
 				<div>
 					<div class="slide">
-						<a href="#" class="thumb_4 video_thumb">
+						<a href="#" data-src= "https://youtu.be/YPIUVXdD6Eo" class="thumb_4 video_thumb" data-fancybox >
 							<img src="img/thumb_4/video_03.jpg" alt="" />
 							<div class="thumb_4_descript">
 								<div class="thumb_4_title">
@@ -1533,7 +1543,7 @@
 				</div>
 				<div>
 					<div class="slide">
-						<a href="#" class="thumb_4 video_thumb">
+						<a href="#" data-src= "https://youtu.be/YPIUVXdD6Eo" class="thumb_4 video_thumb" data-fancybox >
 							<img src="img/thumb_4/video_01.jpg" alt="" />
 							<div class="thumb_4_descript">
 								<div class="thumb_4_title">
@@ -1548,7 +1558,7 @@
 				</div>
 				<div>
 					<div class="slide">
-						<a href="#" class="thumb_4 video_thumb">
+						<a href="#" data-src= "https://youtu.be/YPIUVXdD6Eo" class="thumb_4 video_thumb" data-fancybox >
 							<img src="img/thumb_4/video_02.jpg" alt="" />
 							<div class="thumb_4_descript">
 								<div class="thumb_4_title">
@@ -1563,7 +1573,7 @@
 				</div>
 				<div>
 					<div class="slide">
-						<a href="#" class="thumb_4 video_thumb">
+						<a href="#" data-src= "https://youtu.be/YPIUVXdD6Eo" class="thumb_4 video_thumb" data-fancybox >
 							<img src="img/thumb_4/video_03.jpg" alt="" />
 							<div class="thumb_4_descript">
 								<div class="thumb_4_title">

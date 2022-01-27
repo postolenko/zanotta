@@ -302,6 +302,7 @@ textarea:focus {
 
 .row {
     max-width: 1410px;
+    min-width: 290px;
     margin: 0 auto;
     padding: 0 25px;
 }
@@ -434,12 +435,29 @@ textarea:focus {
 
 /*-- /Slick --*/
 
+.visible_1024 {
+    display: none;
+}
+
+
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
 
-.header_site {
+.wrapper {
+    padding-top: 189px;
+}
 
+.header_site {
+    background-color: #fff;
+}
+
+#headerSite {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
 }
 
 .header_top_row {
@@ -459,6 +477,7 @@ textarea:focus {
 .header_top > .center {
     width: 340px;
     padding: 7px 10px 0 10px;
+    text-align: center;
 }
 
 .header_top > .right {
@@ -537,6 +556,13 @@ textarea:focus {
     line-height: 23px;
     text-transform: uppercase;
     color: #FFF;
+}
+
+.logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
 }
 
 .inlines {
@@ -783,8 +809,18 @@ textarea:focus {
 }
 
 .logo_2 {
-    display: inline-block;
-    vertical-align: top;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    max-height: 80px;
+    margin: 4px 0 3px;
+}
+
+.logo_2 img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    margin: 0 auto;
 }
 
 .account_link {
@@ -977,6 +1013,13 @@ textarea:focus {
 .main_nav > li {
     padding: 1px;
     position: relative;
+}
+
+.main_nav > li > .sub_right_arrow {
+    display: none;
+    position: absolute;
+    top: 6px;
+    right: 9px;
 }
 
 .main_nav > li > a {
@@ -1193,6 +1236,44 @@ textarea:focus {
     background-image: url(img/sub_right_arrow_red.svg);
 }
 
+.sub_right_arrow {
+    display: block;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-image: url(img/sub_right_arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.sub_right_arrow.active {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
 .sub_menu_list > li > .sub_right_arrow {
     display: none;
     position: absolute;
@@ -1310,6 +1391,7 @@ textarea:focus {
     -webkit-flex-wrap: wrap;
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
+    margin: 0 -1px;
 }
 
 .right_nav li {
@@ -1401,22 +1483,22 @@ textarea:focus {
     /*display: inline-block;*/
     display: none;
     vertical-align: top;
-    width: 45px;
-    height: 37px;
+    width: 22px;
+    height: 20px;
     background: transparent;
     cursor: pointer;
     position: relative;
-    top: 6px;
+    top: 2px;
     z-index: 11;
     border: 1px solid transparent;
 }
 
 .respmenubtn span {
     display: block;
-    width: 27px;
+    width: 19px;
     height: 2px;
-    background: #466896;
-    margin: 0 auto 7px auto;
+    background: #E63F3F;
+    margin: 0 auto 5px auto;
     -webkit-transition-property: transform, border, background;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -1448,15 +1530,15 @@ textarea:focus {
 }
 
 .respmenubtn:hover span {
-    background: #e9ba5f;
+    background: #E63F3F;
 }
 
 .respmenubtn.active span {
     position: relative;
-    width: 35px;
-    top: 2px;
-    left: 0;
-    background: #e9ba5f;
+    width: 24px;
+    top: 0;
+    left: -3px;
+    background: #E63F3F;
 }
 
 .respmenubtn.active span:last-child {
@@ -1470,8 +1552,8 @@ textarea:focus {
     transform: rotate(45deg);
     margin: 3px 0 0 0;
     position: relative;
-    top: 4px;
-    left: 5px;
+    top: 2px;
+    left: -2px;
 }
 
 .respmenubtn.active span:nth-child(2) {
@@ -1482,6 +1564,190 @@ textarea:focus {
 }
 
 /* ----- / Responsive Menu Button ------ */
+
+.header_row_3 {
+    -webkit-transition-property: padding;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: padding;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: padding;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: padding;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: padding;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.header_row_2_templ > .left {
+    -webkit-transition-property: padding;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: padding;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: padding;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: padding;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: padding;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.header_row_2_templ > .right {
+    -webkit-transition-property: padding;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: padding;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: padding;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: padding;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: padding;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.header_row_2_templ .inlines_2 {
+    -webkit-transition-property: margin-top;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: margin-top;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: margin-top;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: margin-top;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: margin-top;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.logo_2 {
+    -webkit-transition-property: margin, max-height;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: margin, max-height;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: margin, max-height;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: margin, max-height;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: margin, max-height;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.header_row_2_templ .inlines_3 {
+    -webkit-transition-property: margin-top;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: margin-top;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: margin-top;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: margin-top;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: margin-top;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+#headerSite.scroll {
+    box-shadow: 0 5px 5px 3px rgba(0,0,0,.19);
+    -webkit-box-shadow: 0 5px 5px 3px rgba(0,0,0,.19);
+    -moz-box-shadow: 0 5px 5px 3px rgba(0,0,0,.19);
+}
+
+#headerSite.scroll .header_row_3 {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#headerSite.scroll .header_row_2_templ > .left {
+    padding: 0 10px 0 0;
+}
+
+#headerSite.scroll .header_row_2_templ > .right {
+    padding: 0 0 0 10px;
+}
+
+#headerSite.scroll .header_row_2_templ .inlines_2 {
+    margin-top: 10px;
+}
+
+#headerSite.scroll .logo_2 {
+    max-height: 42px;
+    margin: 0;
+}
+
+#headerSite.scroll .header_row_2_templ .inlines_3 {
+    margin-top: 3px;
+}
+
+.close_menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #fff;
+    background-size: contain;
+    background-image: url(img/close.svg);
+    background-repeat: no-repeat;
+}
+
+#resp_nav .close_menu {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 2;
+}
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
@@ -1522,7 +1788,7 @@ textarea:focus {
 }
 
 .slide_descript {
-    padding: 20px 0 49px 0;
+    padding: 20px 15px 49px 15px;
     text-align: center;
     position: relative;
     z-index: 2;
@@ -1626,6 +1892,10 @@ textarea:focus {
 /*-- /Section 2 -Main Page --*/
 
 /*-- Section 3 -Main Page --*/
+
+.sect_3 {
+    overflow: hidden;
+}
 
 .slider_2_wrapp {
     padding: 0 50px;
@@ -1894,6 +2164,9 @@ textarea:focus {
 .h2_wrapp img {
     display: inline-block;
     vertical-align: top;
+    width: auto;
+    height: auto;
+    max-width: 100%;
 }
 
 .thumbnails_3 {
@@ -1906,7 +2179,7 @@ textarea:focus {
 
 .thumb_3 {
     display: block;
-    width: 325px;
+    width: calc(25% - 18px);
     margin: 9px;
     background: #fff;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .25);
@@ -2262,12 +2535,12 @@ textarea:focus {
 }
 
 .thumb_4_header > div:nth-child(1) {
-    width: 50%;
+    width: 30%;
     padding: 3px 5px 3px 0;
 }
 
 .thumb_4_header > div:nth-child(2) {
-    width: 50%;
+    width: 70%;
     padding: 3px 0 3px 5px;
     text-align: right;
 }
